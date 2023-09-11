@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios y Puntuaciones</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <h1>Comentarios y Puntuaciones</h1>
-    <div id="comments-container"></div>
-
     <h2>Agregar un comentario y puntuación:</h2>
     <form id="comment-form">
+        <label for="name">Nombre:</label>
+        <textarea id="name" name="name" rows="1" cols="20" required></textarea><br>
+        <br>
         <label for="comment">Comentario:</label>
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
         
         <label for="rating">Puntuación:</label>
         <select id="rating" name="rating">
-            <option value="1">1 estrella</option>
-            <option value="2">2 estrellas</option>
-            <option value="3">3 estrellas</option>
-            <option value="4">4 estrellas</option>
-            <option value="5">5 estrellas</option>
+            <option value="1"> ☆ </option>
+            <option value="2"> ☆ ☆ </option>
+            <option value="3"> ☆ ☆ ☆ </option>
+            <option value="4"> ☆ ☆ ☆ ☆ </option>
+            <option value="5"> ☆ ☆ ☆ ☆ ☆ </option>
         </select><br>
 
-        <input type="submit" value="Agregar comentario">
+        <input id="btn" type="submit" value="Agregar comentario">
     </form>
-
-    
+    <div id="container"></div>
+    <script src="script.js"></script>
 </body>
 </html>

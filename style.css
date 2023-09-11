@@ -2,4 +2,9 @@
  .rating {
     font-size: 24px;
     color: gold;
+    cursor: pointer;
+}
+
+.checked {
+    color: yellow;
 }
